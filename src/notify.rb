@@ -10,6 +10,10 @@ def assert_backtick(command)
   output
 end
 
+def success
+  0
+end
+
 def failed(*lines)
   (['FAILED'] + lines.flatten).each do |line|
     STDERR.puts(line)
