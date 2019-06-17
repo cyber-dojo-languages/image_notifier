@@ -9,8 +9,9 @@
 $ DEPENDENTS="csharp-moq csharp-nunit csharp-specflow"
 $ docker run \
   --env CIRCLE_API_MACHINE_USER_TOKEN \
-  --rm cyberdojofoundation/image_notifier \
-    ${DEPENDENTS}
+  --rm \
+    cyberdojofoundation/image_notifier \
+      ${DEPENDENTS}
 
 # curl ... https://circleci.com/api/v1.1/project/github/cyber-dojo-languages/csharp-moq/tree/master
 # curl ... https://circleci.com/api/v1.1/project/github/cyber-dojo-languages/csharp-nunit/tree/master
